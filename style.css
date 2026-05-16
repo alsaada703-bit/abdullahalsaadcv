@@ -1,200 +1,188 @@
-/* إعدادات عامة */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
 }
 
 body {
-    background-color: #f8fafc;
-    color: #334155;
-    line-height: 1.7;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
+    font-family: 'Cairo', sans-serif;
+    background: #f0f2f5;
+    padding: 30px;
+    line-height: 1.6;
 }
 
-/* حاوية السيرة الذاتية */
 .cv-container {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 900px;
-    border-radius: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
-    border: 1px solid #e2e8f0;
 }
 
-/* تصميم رأس الصفحة */
+/* الرأس */
 .cv-header {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 45px 40px;
-    border-bottom: 4px solid #0d9488;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 35px;
+    text-align: center;
 }
 
-.header-main .name {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 8px;
+.name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.header-main .title {
-    font-size: 1.05rem;
-    color: #0d9488;
-    font-weight: 600;
+.title {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
 
-/* تقسيم الجسم */
+/* تنسيق العمودين */
 .cv-body {
     display: flex;
+    flex-wrap: wrap;
 }
 
-/* العمود الجانبي */
 .cv-sidebar {
-    background-color: #f1f5f9;
-    width: 32%;
-    padding: 40px 25px;
-    border-left: 1px solid #e2e8f0;
+    background: #f8f9fa;
+    width: 30%;
+    padding: 30px;
 }
 
+.cv-main-content {
+    width: 70%;
+    padding: 30px;
+}
+
+/* الشريط الجانبي */
 .sidebar-block {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .sidebar-title {
-    font-size: 1.05rem;
-    color: #0f172a;
-    font-weight: 700;
-    margin-bottom: 18px;
-    position: relative;
+    color: #1e3c72;
+    border-right: 4px solid #2a5298;
+    padding-right: 12px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
-.sidebar-title::after {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #0d9488;
-    margin-top: 5px;
-    border-radius: 2px;
-}
-
-.contact-list {
+.contact-list, .sidebar-block ul {
     list-style: none;
 }
 
-.contact-list li {
-    font-size: 0.9rem;
-    margin-bottom: 14px;
-    color: #475569;
+.contact-list li, .sidebar-block ul li {
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* شبكة المهارات */
+.icon {
+    font-size: 1.2rem;
+}
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 .skills-grid span {
+    background: #e9ecef;
+    padding: 5px 12px;
+    border-radius: 20px;
     font-size: 0.85rem;
-    background-color: #ffffff;
-    color: #1e293b;
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-weight: 600;
-    border: 1px solid #e2e8f0;
 }
 
 /* المحتوى الرئيسي */
-.cv-main-content {
-    width: 68%;
-    padding: 40px;
-}
-
 .main-section {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .section-title {
+    color: #1e3c72;
+    border-right: 4px solid #2a5298;
+    padding-right: 12px;
+    margin-bottom: 15px;
     font-size: 1.3rem;
-    color: #0f172a;
-    margin-bottom: 20px;
-    font-weight: 700;
 }
 
 .about-text {
-    color: #576574;
-    font-size: 0.98rem;
-    text-align: justify;
+    color: #555;
+    line-height: 1.7;
 }
 
-/* تصميم عناصر المحتوى */
-.card-item {
-    background-color: #ffffff;
-    border-right: 3px solid #cbd5e1;
-    padding: 0 15px 0 0;
-    margin-bottom: 22px;
-    transition: all 0.3s ease;
+.education-item, .exp-item {
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
 }
 
-.card-item:hover {
-    border-right-color: #0d9488;
+.education-item h3, .exp-item h3 {
+    color: #2a5298;
+    margin-bottom: 5px;
+    font-size: 1rem;
 }
 
-.card-header {
+/* الشهادات */
+.cert-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.card-title {
-    font-size: 1.05rem;
-    color: #1e293b;
-    font-weight: 600;
+.cert-list span {
+    background: #e3f2fd;
+    color: #1e3c72;
+    padding: 6px 14px;
+    border-radius: 25px;
+    font-size: 0.85rem;
 }
 
-.badge {
-    font-size: 0.8rem;
-    background-color: #f0fdfa;
-    color: #0d9488;
-    padding: 3px 10px;
-    border-radius: 6px;
-    font-weight: 600;
-    border: 1px solid #ccfbf1;
+/* زر تحميل PDF */
+.pdf-download-area {
+    background: #e8f0fe;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 15px;
 }
 
-.card-desc {
-    color: #64748b;
-    font-size: 0.92rem;
+.pdf-button {
+    display: inline-block;
+    background: #2a5298;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
-.edu-inst {
-    color: #0d9488;
-    font-size: 0.95rem;
-    font-weight: 600;
+.pdf-button:hover {
+    background: #1e3c72;
+    transform: scale(1.02);
 }
 
-/* التجاوب مع الشاشات */
+/* التذييل */
+.cv-footer {
+    background: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 0.85rem;
+}
+
+/* استجابة للشاشات الصغيرة */
 @media (max-width: 768px) {
-    .cv-body {
-        flex-direction: column;
-    }
     .cv-sidebar, .cv-main-content {
         width: 100%;
     }
-    .cv-sidebar {
-        border-left: none;
-        border-bottom: 1px solid #e2e8f0;
-    }
-    .cv-header {
-        padding: 30px 20px;
-        text-align: center;
+    body {
+        padding: 15px;
     }
 }
