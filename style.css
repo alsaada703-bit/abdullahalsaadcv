@@ -186,3 +186,64 @@ body {
         padding: 15px;
     }
 }
+/* شبكة بطاقات الشهادات */
+.cert-pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.cert-pdf-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-right: 4px solid #2a5298;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cert-pdf-card span {
+    font-size: 1.8rem;
+}
+
+.cert-pdf-card:hover {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdef5 100%);
+    transform: translateX(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* منطقة تحميل الحزمة الكاملة */
+.pdf-download-area {
+    background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pdf-button {
+    display: inline-block;
+    background: #2a5298;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.pdf-button:hover {
+    background: #1e3c72;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
