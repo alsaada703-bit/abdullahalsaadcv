@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية | عبدالله السعد</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <header class="cv-header">
+            <div class="header-main">
+                <h1 class="name">عبدالله السعد</h1>
+                <p class="title">متخصص تقنية معلومات / مطور ويب</p>
+            </div>
+        </header>
+
+        <div class="cv-body">
+            <aside class="cv-sidebar">
+                <div class="sidebar-block">
+                    <h3 class="sidebar-title">الاتصال</h3>
+                    <ul class="contact-list">
+                        <li><span class="icon">📍</span> الرياض، السعودية</li>
+                        <li><span class="icon">📧</span> alsaada703@gmail.com</li>
+                        <li><span class="icon">📱</span> +966 50 000 0000</li>
+                        <li><span class="icon">💻</span> github.com/alsaada703-bit</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-block">
+                    <h3 class="sidebar-title">المهارات التقنية</h3>
+                    <div class="skills-grid">
+                        <span>HTML5 & CSS3</span>
+                        <span>UI / UX Design</span>
+                        <span>Python</span>
+                        <span>Database Design</span>
+                        <span>Responsive Design</span>
+                        <span>Git & GitHub</span>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="cv-main-content">
+                
+                <section class="main-section">
+                    <h2 class="section-title">النبذة الشخصية</h2>
+                    <p class="about-text">
+                        طالب في تخصص تقنية المعلومات، شغوف بتطوير الويب وبناء واجهات المستخدم البرمجية الحديثة. أمتلك أساساً برمجياً قوياً في لغات التطوير الأساسية والتصميم المتجاوب، بالإضافة إلى اهتمام متزايد بإدارة وتحليل قواعد البيانات. أسعى لتوظيف مهاراتي التقنية والأكاديمية في تقديم حلول ويب مبتكرة والمساهمة في مشاريع برمجية مميزة تزيد من خبرتي العمليّة.
+                    </p>
+                </section>
+
+                <section class="main-section">
+                    <h2 class="section-title">المشاريع والخبرات البرمجية</h2>
+                    
+                    <div class="card-item">
+                        <div class="card-header">
+                            <h4 class="card-title">مشروع سيرة ذاتية رقمية (Digital CV Project)</h4>
+                            <span class="badge">2026</span>
+                        </div>
+                        <p class="card-desc">تطوير وبناء موقع سيرة ذاتية شخصية متكامل باستخدام HTML5 و CSS3، مع تطبيق معايير الويب الدلالية والتصميم المتجاوب لضمان توافقه مع كافة الشاشات، ورفعه واستضافته عبر منصة GitHub.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-header">
+                            <h4 class="card-title">مشاريع برمجية وتطوير قواعد البيانات</h4>
+                            <span class="badge">2025 - 2026</span>
+                        </div>
+                        <p class="card-desc">تصميم وبناء مخططات الكيانات والعلاقات (ERDs) وتحليل البيانات، بالإضافة إلى كتابة وتطوير سكربتات برمجية مؤتمتة باستخدام لغة Python لحل المشكلات التقنية وتسهيل التعامل مع البيانات.</p>
+                    </div>
+                </section>
+
+                <section class="main-section">
+                    <h2 class="section-title">التعليم</h2>
+                    <div class="card-item">
+                        <div class="card-header">
+                            <h4 class="card-title">بكالوريوس تقنية المعلومات</h4>
+                            <span class="badge">متوقع 2027</span>
+                        </div>
+                        <p class="edu-inst">جامعة شقراء</p>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+    </div>
+
+</body>
+</html>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
