@@ -1,111 +1,200 @@
-
+/* إعدادات عامة */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 body {
-    background-color: #f4f6f9;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.7;
     padding: 40px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /* حاوية السيرة الذاتية */
 .cv-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e2e8f0;
 }
 
-/* تنسيق الهيدر (رأس الصفحة) */
+/* تصميم رأس الصفحة */
 .cv-header {
-    border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 45px 40px;
+    border-bottom: 4px solid #0d9488;
 }
 
-.cv-header h1 {
-    font-size: 2.5rem;
-    color: #1a202c;
-    margin-bottom: 5px;
+.header-main .name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
-.cv-header h2 {
-    font-size: 1.2rem;
-    color: #4a5568;
-    font-weight: 500;
-    margin-bottom: 15px;
+.header-main .title {
+    font-size: 1.05rem;
+    color: #0d9488;
+    font-weight: 600;
 }
 
-.cv-header p {
-    font-size: 0.95rem;
-    color: #718096;
-    margin-bottom: 5px;
+/* تقسيم الجسم */
+.cv-body {
+    display: flex;
 }
 
-/* تنسيق الأقسام المشتركة */
-.cv-section {
-    margin-bottom: 30px;
+/* العمود الجانبي */
+.cv-sidebar {
+    background-color: #f1f5f9;
+    width: 32%;
+    padding: 40px 25px;
+    border-left: 1px solid #e2e8f0;
+}
+
+.sidebar-block {
+    margin-bottom: 35px;
+}
+
+.sidebar-title {
+    font-size: 1.05rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.sidebar-title::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #0d9488;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* شبكة المهارات */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills-grid span {
+    font-size: 0.85rem;
+    background-color: #ffffff;
+    color: #1e293b;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+}
+
+/* المحتوى الرئيسي */
+.cv-main-content {
+    width: 68%;
+    padding: 40px;
+}
+
+.main-section {
+    margin-bottom: 35px;
 }
 
 .section-title {
     font-size: 1.3rem;
-    color: #2b6cb0; /* لون أزرق احترافي */
-    border-right: 4px solid #2b6cb0;
-    padding-right: 10px;
-    margin-bottom: 15px;
+    color: #0f172a;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
-.section-text {
-    color: #4a5568;
-    font-size: 1rem;
+.about-text {
+    color: #576574;
+    font-size: 0.98rem;
+    text-align: justify;
 }
 
-/* تنسيق قسم الوظائف والتعليم */
-.job, .education {
-    margin-bottom: 15px;
+/* تصميم عناصر المحتوى */
+.card-item {
+    background-color: #ffffff;
+    border-right: 3px solid #cbd5e1;
+    padding: 0 15px 0 0;
+    margin-bottom: 22px;
+    transition: all 0.3s ease;
 }
 
-.job h4, .education h4 {
-    font-size: 1.1rem;
-    color: #2d3748;
+.card-item:hover {
+    border-right-color: #0d9488;
 }
 
-.job-date {
-    font-size: 0.85rem;
-    color: #a0aec0;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.job-tasks {
-    margin-right: 20px;
-    color: #4a5568;
-}
-
-.job-tasks li {
-    margin-bottom: 5px;
-}
-
-/* تنسيق المهارات على شكل قوائم مرنة */
-.skills-list {
-    list-style: none;
+.card-header {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
 }
 
-.skills-list li {
-    background-color: #ebf8ff;
-    color: #2b6cb0;
-    padding: 6px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
+.card-title {
+    font-size: 1.05rem;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.badge {
+    font-size: 0.8rem;
+    background-color: #f0fdfa;
+    color: #0d9488;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 1px solid #ccfbf1;
+}
+
+.card-desc {
+    color: #64748b;
+    font-size: 0.92rem;
+}
+
+.edu-inst {
+    color: #0d9488;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* التجاوب مع الشاشات */
+@media (max-width: 768px) {
+    .cv-body {
+        flex-direction: column;
+    }
+    .cv-sidebar, .cv-main-content {
+        width: 100%;
+    }
+    .cv-sidebar {
+        border-left: none;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    .cv-header {
+        padding: 30px 20px;
+        text-align: center;
+    }
 }
